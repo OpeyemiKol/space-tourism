@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import MoonImage from "../assets/destination/image-moon.png";
+
 function Moon() {
   return (
     <main
@@ -13,7 +15,7 @@ function Moon() {
 
         <div className="flex flex-col items-center mt-10 lg:flex-row lg:items-start lg:justify-between lg:gap-20 lg:mt-20 lg:ml-30">
           <img
-            src="/src/assets/destination/image-moon.png"
+            src={MoonImage}
             alt="Moon"
             className="w-40 h-40 md:w-70 md:h-70 lg:w-80 lg:h-80"
           />
