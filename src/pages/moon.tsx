@@ -8,7 +8,7 @@ function Moon() {
     >
       <div className="w-full h-full flex flex-col items-center text-white mt-5 md:items-start lg:w-[90%] lg:mt-0 ">
         <h1 className="text-[16px] uppercase tracking-widest md:ml-8 md:mt-5 lg:ml-18">
-          <span className="text-gray-500 mr-2">0</span> Pick your destination
+          <span className="text-gray-500 mr-2">01</span> Pick your destination
         </h1>
 
         <div className="flex flex-col items-center mt-10 lg:flex-row lg:items-start lg:justify-between lg:gap-20 lg:mt-20 lg:ml-30">
