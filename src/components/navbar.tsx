@@ -75,7 +75,7 @@ function Navbar() {
         {/* Close button */}
         <Close
           onClick={() => setIsOpen(false)}
-          className="absolute top-6 right-4 mb-8 cursor-pointer"
+          className="absolute top-9 right-4 mb-8 cursor-pointer"
         />
 
         {/* Nav links */}
@@ -97,8 +97,8 @@ function Navbar() {
                 <span
                   className={`flex items-center justify-between w-full ${
                     isActive
-                      ? "border-r-4 border-white"
-                      : "border-r-4 border-transparent hover:border-gray-400"
+                      ? "border-r-7 border-white"
+                      : "border-r-7 border-transparent hover:border-gray-400"
                   }`}
                 >
                   <span className="font-barlow flex text-[16px]  items-center gap-2">

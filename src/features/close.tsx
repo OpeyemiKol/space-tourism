@@ -9,7 +9,7 @@ interface CloseProps {
 const Close: React.FC<CloseProps> = ({ className, onClick }) => {
   return (
     <div onClick={onClick} className={className}>
-      <img src={closeIcon} alt="Close Menu" className="h-8 w-8" />
+      <img src={closeIcon} alt="Close Menu" className="h-[22px] w-[22px]" />
     </div>
   );
 };
