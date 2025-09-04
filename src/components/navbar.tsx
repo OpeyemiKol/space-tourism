@@ -26,7 +26,7 @@ function Navbar() {
 
         {/* Links (tablet + desktop) */}
         <div
-          className="hidden md:flex text-barlow gap-8 md:gap-15
+          className="hidden md:flex font-barlow gap-8 md:gap-15
          md:absolute lg:absolute right-0 
             md:top-0 lg:top-4
             h-[96px] lg:h-[70px] items-center justify-center
@@ -44,7 +44,7 @@ function Navbar() {
               <NavLink
                 key={link.path}
                 to={link.path}
-                className={`uppercase tracking-widest md:text-[11px] lg:text-[10px] text-white flex items-center gap-2 h-full border-b-2 ${
+                className={`uppercase tracking-widest md:text-[14px] lg:text-[11px] text-white flex items-center gap-2 h-full border-b-2 ${
                   isActive
                     ? "border-white"
                     : "border-transparent hover:border-gray-400"

@@ -7,14 +7,14 @@ import Europa from "./pages/europa";
 import Titan from "./pages/titan";
 import Crew from "./pages/crew";
 import Technology from "./pages/technology";
+import type { JSX } from "react";
 
-function App() {
+function App(): JSX.Element {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Homepage />} />
 
-        {/* Redirect /destination → /destination/moon */}
         <Route
           path="/destination"
           element={<Navigate to="/destination/moon" replace />}
@@ -25,7 +25,6 @@ function App() {
         <Route path="/destination/europa" element={<Europa />} />
         <Route path="/destination/titan" element={<Titan />} />
 
-        {/* You can add these later */}
         <Route path="/crew" element={<Crew />} />
         <Route path="/technology" element={<Technology />} />
       </Route>

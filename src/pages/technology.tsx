@@ -40,8 +40,9 @@ const Technology: React.FC = () => {
   return (
     <main>
       <div className="w-full h-full flex flex-col items-center text-white mt-5 md:items-start lg:mt-0">
-        <h1 className="text-[16px] uppercase tracking-widest md:ml-8 md:mt-3 lg:ml-35 lg:mt-5">
-          <span className="text-gray-500 mr-2">03</span> Space Launch 101
+        <h1 className="text-[16px] uppercase font-barlow tracking-widest md:ml-8 md:mt-3 lg:ml-35 lg:mt-5">
+          <span className="text-gray-500 font-bold mr-2">03</span> Space Launch
+          101
         </h1>
 
         <div className="w-full h-full flex flex-col items-center mt-20 lg:flex-row-reverse lg:justify-between lg:mt-20 lg:w-[89%] lg:h-[310px] lg:ml-auto">
@@ -54,16 +55,16 @@ const Technology: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center text-center mt-10 md:mt-7 md:w-full lg:items-start lg:text-start lg:w-[55%] lg:flex-row">
-            <div className="flex gap-4 lg:flex-col lg:gap-6 lg:w-[20%] lg:mt-15">
+            <div className="flex font-bellefair gap-4 lg:flex-col lg:gap-6 lg:w-[20%] lg:mt-15">
               {" "}
               {techData.map((_, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveIdx(idx)}
-                  className={`w-10 h-10 md:w-15 md:h-15 lg:w-14 lg:h-14 rounded-full border border-white flex items-center justify-center font-bold transition-colors duration-300 ${
+                  className={`w-10 h-10 md:w-15 md:h-15 lg:w-13 lg:h-13 cursor-pointer rounded-full flex items-center justify-center font-bold transition-colors duration-300 ${
                     idx === activeIdx
-                      ? "bg-white text-black"
-                      : "bg-transparent text-white hover:bg-gray-500"
+                      ? "bg-white text-black border border-white hover:bg-gray-300"
+                      : "text-white border border-gray-500 hover:bg-gray-600"
                   }`}
                 >
                   {idx + 1}
@@ -71,15 +72,15 @@ const Technology: React.FC = () => {
               ))}
             </div>
 
-            <div className="flex flex-col items-center text-center lg:w-[80%] lg:items-start lg:text-start lg:mt-9">
+            <div className="flex flex-col items-center text-center lg:w-[80%] lg:items-start lg:text-start lg:mt-10">
               {" "}
-              <h2 className="uppercase text-gray-500 mt-6 text-[20px] md:text-[25px] lg:text-[16px]">
+              <h2 className="uppercase font-bellefair text-gray-500 mt-6 text-[20px] md:text-[25px] lg:text-[16px]">
                 The terminology...
               </h2>
-              <h3 className="uppercase mt-3 text-[26px] md:text-[35px] lg:text-[30px]">
+              <h3 className="uppercase font-bellefair mt-3 text-[26px] md:text-[35px] lg:text-[30px]">
                 {name}
               </h3>
-              <p className="text-[16px] mt-3 leading-7 w-[88%] md:w-[65%] md:text-[18px] md:leading-8 lg:text-[12px] lg:leading-6">
+              <p className="text-[16px] font-barlow text-custom mt-3 leading-7 w-[88%] md:w-[65%] md:text-[18px] md:leading-8 lg:text-[12px] lg:leading-6">
                 {description}
               </p>
             </div>

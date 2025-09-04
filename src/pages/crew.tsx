@@ -46,33 +46,34 @@ const Crew: React.FC = () => {
   return (
     <main>
       <div className="w-full h-full flex flex-col items-center text-white mt-5 md:items-start lg:w-[90%] lg:mt-0 lg:mx-auto">
-        <h1 className="text-[16px] uppercase tracking-widest md:ml-8 md:mt-3 lg:mt-5 lg:ml-18">
-          <span className="text-gray-500 mr-2">02</span> Meet your crew
+        <h1 className="text-[16px] uppercase font-barlow tracking-widest md:ml-8 md:mt-3 lg:mt-5 lg:ml-18">
+          <span className="text-gray-500 font-bold mr-2">02</span> Meet your
+          crew
         </h1>
 
         <div className="mt-10 md:mt-12 lg:flex lg:mt-7">
           <div className="flex flex-col items-center justify-center lg:w-1/2 lg:items-start lg:pl-18 lg:justify-end">
-            <h2 className="text-[17px] uppercase font-extralight text-gray-400 md:text-[24px] md:tracking-widest lg:text-[16px]">
+            <h2 className="text-[17px] uppercase font-bellefair text-gray-400 md:text-[24px] md:tracking-widest lg:text-[16px]">
               {role}
             </h2>
 
-            <h3 className="text-[22px] uppercase tracking-wide mt-1 md:text-[40px] lg:text-[28px]">
+            <h3 className="text-[22px] uppercase font-bellefair tracking-wide mt-1 md:text-[40px] lg:text-[28px]">
               {name}
             </h3>
 
-            <p className="w-[85%] mt-6 flex text-center leading-6.5 md:w-[70%] md:text-[17px] md:leading-8 lg:text-start lg:text-[11px] lg:leading-5 lg:mt-4">
+            <p className="w-[85%] mt-6 flex text-center font-barlow text-custom leading-6.5 md:w-[70%] md:text-[17px] md:leading-8 lg:text-start lg:text-[11px] lg:leading-5 lg:mt-4">
               {bio}
             </p>
 
-            <div className="flex space-x-4 mt-20 md:mt-15">
+            <div className="flex space-x-4 mt-20 md:mt-15 lg:space-x-6">
               {crewData.map((_, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveIdx(idx)}
-                  className={`w-[10px] h-[10px] rounded-full transition-colors duration-300 ${
+                  className={`w-[10px] h-[10px] rounded-full cursor-pointer transition-colors duration-300 ${
                     idx === activeIdx
                       ? "bg-white"
-                      : "bg-gray-500 hover:bg-gray-300"
+                      : "bg-gray-700 hover:bg-gray-400"
                   }`}
                 />
               ))}
