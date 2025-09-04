@@ -21,7 +21,7 @@ const Moon: React.FC = () => {
             className="w-40 h-40 md:w-70 md:h-70 lg:w-80 lg:h-80"
           />
 
-          <div className="text-center flex flex-col justify-center items-center space-y-6 md:space-y-10 lg-w-[50%] lg:items-start lg:space-y-5 lg:ml-10">
+          <div className="text-center flex flex-col justify-center items-center space-y-6 md:space-y-10 lg:items-start lg:space-y-5 lg:ml-10">
             <div className="text-center font-barlow mt-15 space-x-6 lg:mt-0 lg:text-[10px]">
               {["moon", "mars", "europa", "titan"].map((planet) => (
                 <NavLink
