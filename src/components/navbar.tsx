@@ -101,7 +101,7 @@ function Navbar() {
                       : "border-r-4 border-transparent hover:border-gray-400"
                   }`}
                 >
-                  <span className="flex items-center gap-2">
+                  <span className="font-barlow flex text-[16px]  items-center gap-2">
                     <span className="font-bold">{link.id}</span>
                     <span>{link.name}</span>
                   </span>

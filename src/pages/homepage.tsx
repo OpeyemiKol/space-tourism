@@ -13,7 +13,7 @@ const Homepage: React.FC = () => {
           SPACE
         </h1>
 
-        <p className="lg:w-[380px] text-[16px] text-custom md:text-[16px] lg:text-[12px] leading-8 md:leading-7 mt-8 lg:mt-2">
+        <p className="lg:w-[380px] font-barlow text-[16px] text-custom md:text-[16px] lg:text-[12px] leading-8 md:leading-7 mt-8 lg:mt-2">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world

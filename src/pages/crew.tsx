@@ -88,7 +88,7 @@ const Crew: React.FC = () => {
             />
 
             {/* gradient overlay */}
-            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black to-transparent z-20 md:hidden lg:block" />
+            <div className="absolute bottom-0 left-0 w-full h-14 bg-gradient-to-t from-black to-transparent z-20 md:hidden lg:block" />
           </div>
         </div>
       </div>
