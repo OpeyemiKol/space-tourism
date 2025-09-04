@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import EuropaImage from "../assets/destination/image-moon.png";
+import EuropaImage from "../assets/destination/image-europa.png";
 
 const Europa: React.FC = () => {
   return (
